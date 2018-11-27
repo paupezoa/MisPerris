@@ -1,0 +1,12 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+
+{% block contenido %}
+<div style="margin-left: 25%;">
+    <a href="{% url 'formulario' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Formulario Cliente</a>>
+    <a href="{% url 'agregar_mascota' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Agregar Mascota</a>>
+    <a href="{% url 'listar_mascotas' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Listar Mascota</a>>
+</div>
+{% endblock contenido %}

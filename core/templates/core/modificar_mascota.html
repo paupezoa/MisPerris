@@ -1,0 +1,147 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+
+<!--<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">-->
+    <div class="formupostulante">        
+        <div class="dentroformupostulante">    
+        
+            <br>
+            <div> 
+            <br>
+            <br>
+            <h1 class="tituloModificar">Modificar Mascota</h1>
+                <form  action="" method="POST" id="clienteFormulario">
+                
+                {% csrf_token %} 
+
+                    <table class="table table-responsive" >
+                        <tr>
+                            <td>
+                                <label for="">Id Mascota</label>
+                            </td>
+                            <td>
+                                <input  type="hidden" name="txtId" id="txtId" value="{{ masco.id }}" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label  for="">Nombre Mascota</label>
+                            </td>
+                            <td>
+                                <input   type="text" name="txtNombreMascota" id="txtNombreMascota" value="{{ masco.nombre }}"  required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label   for="">Raza</label>
+                            </td>
+                            <td>
+                                <select  name="cboRaza" id="cboRaza" required>
+                                    <option value="">Seleccionar</option>
+
+                                    {% for r in razas %}
+                                    <option 
+                                    
+                                    {% if r.id == masco.raza.id %}
+                                        {{'selected'}}
+                                    {% endif %}
+
+                                    value="{{ r.id }}">{{ r.raza }}</option>
+                                    {% endfor %}
+
+                            </option>
+                    
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label  for="">Género</label>
+                            </td>
+                            <td>
+                                <input   type="text" name="txtGenero" id="txtGenero"  value="{{masco.genero}}">
+                                <label for="">(M o H)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label  for="">Fecha de Ingreso</label>
+                            </td>
+                            <td>
+                                <input  type="date" name="txtFechaIn" id="txtFechaIn"   value="{{ masco.fecha_ingreso_formato }}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label  for="">Fecha de Nacimiento</label>
+                            </td>
+                            <td>
+                                <input  type="date" name="txtFechaNa" id="txtFechaNa"  value="{{ masco.fecha_nacimiento_formato }}">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>
+                                <label   for="">Estado</label>
+                            </td>
+                            <td>
+                                <select  name="cboEstado" id="cboEstado">
+                                    <option value="">Seleccionar</option>
+                                
+                                    {% for e in estados %}
+                                    <option 
+                                    
+                                    {% if e.id == masco.Nombreestado.id %}
+                                        {{'selected'}}
+                                    {% endif %}
+
+                                    value="{{ e.id }}">{{ e.Nombreestado }}</option>
+                                    {% endfor %}
+                                
+                            </option>
+                    
+                                </select>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            
+                            <td>
+                                <label  for="">Imagen</label>
+                            </td>
+                            <td>
+                                <input type="file" name="imagen" id="imagen" value="{{ masco.imagen }}" >
+                            </td>
+                        </tr>
+                        <tr>
+                        
+                            <td>
+                                <input class="btn btn-success" type="submit" value="Modificar Mascota" id="btnGuardar" name="btnGuardar">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            
+                <h3>
+                    {% if messages %}
+
+                    {% for m in messages %}
+                        <h3>{{ m }}</h3>
+                    {% endfor %}
+
+                    {% endif %}
+                </h3>
+            
+            </div>
+        
+    
+        </div>    
+            {% endblock contenido %}
+    </div>    

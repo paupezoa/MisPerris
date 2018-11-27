@@ -1,0 +1,131 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<!--<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">-->
+    <div class="formupostulante">        
+        <div class="dentroformupostulante">
+         
+            <br>
+            <div> 
+            <br>
+            <br>
+            <h1 class="tituloAgregar">Formulario Mascota</h1>
+             <form  action="" method="POST" id="MascotaFormulario" enctype="multipart/form-data">
+            
+             {% csrf_token %} 
+
+                <table class="table table-responsive" >
+                    <tr>
+                        <td>
+                            <label  for="">Nombre Mascota</label>
+                        </td>
+                        <td>
+                            <input  type="text" name="txtNombreMas" id="txtNombreMas">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label   for="">Raza</label>
+                        </td>
+                        <td>
+                            <select  name="cboRaza" id="cboRaza" required>
+                                <option value="">Seleccionar</option>
+
+                                {% for m in razas%}
+                                <option value="{{ m.id }}">{{ m.raza }}</option>
+                                {% endfor %}
+
+                        </option>
+                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label  for="">Género</label>
+                        </td>
+                        <td>
+                            <input type="text" name="txtGenero" id="txtGenero" required>
+                            <label for="">(M o H)</label>
+                        </td>
+                        
+                           
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label  for="">Fecha de Ingreso</label>
+                        </td>
+                        <td>
+                            <input  type="date" name="txtFechaIn" id="txtFechaIn" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Fecha de Nacimiento</label>
+                        </td>
+                        <td>
+                            <input  type="date" name="txtFechaNa" id="txtFechaNa" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>
+                            <label  for="">Estado</label>
+                        </td>
+                        <td>
+                            <select  name="cboEstado" id="cboEstado" required>
+                                <option value="">Seleccionar</option>
+                               
+                                {% for m in estados%}
+                                <option value="{{ m.id }}">{{ m.Nombreestado }}</option>
+                                {% endfor %}
+                               
+                        </option>
+                
+                            </select>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        
+                        <td>
+                            <label  for="">Imagen</label>
+                        </td>
+                        <td>
+                            <input type="file" name="imagen" id="imagen" >
+                        </td>
+                    </tr>
+                    <tr>
+                    
+                        <td>
+                            <input class="btn btn-success" type="submit" value="Guardar Formulario" id="btnGuardar" name="btnGuardar">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+            
+            <h3>
+                
+                {% if messages %}
+
+                {% for m in messages %}
+                    <h3>{{ m }}</h3>
+                {% endfor %}
+
+                {% endif %}
+            
+            </h3>
+            
+            </div>
+        </div>
+
+
+        {% endblock contenido %}
+    </div>        

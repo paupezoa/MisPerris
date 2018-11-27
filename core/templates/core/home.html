@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="juntardiv">
+
+    <div class="diseñodv1">
+        <h1 class="Rescate">RESCATE</h1>
+        <h5 class="Etapauno">ETAPA UNO</h5>
+        <br>
+       <hr class="margen">    
+       <br>
+       <h5 class="texto">Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un hogar.</h5>
+       <br>
+        <img class="imagen1" src="{% static 'core/Img/rescate.jpg' %}" alt="rescate">
+    </div>
+    <br class="br">
+    <div class="diseñodv2">
+     <img class="imagen2" src="{% static 'core/Img/crowfunding.jpg' %}" alt="rescate">
+        <h1 class="comida">CROWFUNDING</h1>
+        <h5 class="financiamiento">FINANCIAMIENTO</h5>
+        <br>
+        <hr class="margen2">    
+        <br>
+        <h5 class="texto2">Sigue nuestras redes sociales para informate acerca de diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.</h5>
+        <br>
+        <table class="BotonCampañas">
+            <tr>
+                <th class="Campañas">Campañas</th>
+            </tr>
+        </table>
+      
+   </div>
+    <br>   
+</div>
+<div style="clear: both;"></div>
+<br>
+<div class="galeria">
+    <div>
+        <br>
+        <a class="oso" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Oso.jpg' %}"><img src="{% static 'core/Img/rescatados/Oso.jpg' %}"></a>
+        <br><br>
+        <a class="maya" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Maya.jpg' %}"><img src="{% static 'core/Img/rescatados/Maya.jpg' %}"></a>
+        <br><br>
+        <a class="wifi" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Wifi.jpg' %}"><img src="{% static 'core/Img/rescatados/Wifi.jpg' %}"></a>  
+    </div>
+    <div>
+        <br>
+        <a class="chocolate" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Chocolate.jpg' %}"><img src="{% static 'core/Img/rescatados/Chocolate.jpg' %}"></a>
+        <br><br>
+        <a class="pexel" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Pexel.jpg' %}"><img src="{% static 'core/Img/rescatados/Pexel.jpg' %}"></a>
+        <br>
+        <br>
+    </div>
+    <div>
+        <br>
+        <a class="bigotes" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Bigotes.jpg' %}"><img src="{% static 'core/Img/rescatados/Bigotes.jpg' %}"></a>
+        <br><br>
+        <a class="luna" data-fancybox="gallery" href="{% static 'core/Img/rescatados/Luna.jpg' %}"><img src="{% static 'core/Img/rescatados/Luna.jpg' %}"></a>
+    </div>
+</div>
+{% endblock contenido %}

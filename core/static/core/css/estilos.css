@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bx-wrapper {
+    background-color: rgb(133, 212, 183)!important;
+    border:none!important;
+    box-shadow: none!important;
+    background: none;
+}
+.bx-wrapper .bx-caption {
+    background: none!important;
+    width: 12%!important;
+    margin-left: 300px;
+    margin-bottom: 70px;
+    font-size: 20px;
+} 
+
+.bx-caption span{
+    color: black!important;
+    
+} 
+
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color:   rgb(133, 212, 183);
+}
+
+.logo {
+    width: 255px;
+    height: 57px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navegacion {
+    float: right;
+    margin-right: 400px;
+    font-size: 12px;
+}
+
+.navegacion li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 70px;
+    height: 36px;
+    text-align: center;
+}
+.navegacion li:hover {
+    border-radius: 20px;
+}
+
+.navegacion li a {
+    color: white;
+    font-weight:bold;
+
+}
+.landing {
+    background-color: rgb(133, 212, 183);
+    width: 100%;
+    height: 560px;
+}
+
+.landing_image{
+    width: 900px;
+    height: 400px;
+    display: block;
+    margin:  auto;
+    
+}
+.contacto {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    float: left;
+    margin-top: -50px;
+    
+}
+
+.Centro {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;    
+    text-align: center;
+    margin-top: -50px;
+    
+}
+.Social{
+    float: right;
+    margin-right: 50px;
+    margin-top: -50px;
+   
+    }
+    
+.Social li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.Social li img {
+    width: 40px;
+    height: 40px;
+}
+
+.Rescate{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: black;
+    text-align: right;
+    font-size: 25px;  
+    margin-top: 25px;    
+}
+.comida{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: black;
+    font-size: 23px;  
+}
+.Etapauno {
+    color:rgb(182,174,165) ;    
+    text-align: right;
+}
+.financiamiento {
+    color:rgb(182,174,165) ;   
+    
+}
+.texto {
+    color: rgb(158, 157, 155);
+    text-align: right;
+    margin-left: 100px;
+}
+.texto2 {
+    color: rgb(158, 157, 155);
+    margin-right: 100px;
+}
+.imagen1 {
+    height:auto;
+    width: 250px;
+    margin-left: 51%;
+}
+.imagen2 {
+    height:auto;
+    width: 230px;
+    margin-top: 25px;
+}
+.juntardiv {
+    width: 100%;
+    background-color: white;
+    height: 534px;
+}
+.diseñodv1{
+    background-color: white;
+    width: 49%;
+    height: 520px;
+    float: left;
+}
+.diseñodv2{
+    background-color: white;
+    width: 48%;
+    height: 520px;
+    float: right;
+    margin-top: -10px;
+}
+.margen {
+    margin-left: 92%;
+}
+.margen2 {
+    margin-right: 92%;
+}
+.Campañas{
+    border: 2px solid;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 11px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%; 
+    height: 100px;
+    background-color: silver;
+}
+
+.color_letras {
+    color:dimgray;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 200px;
+    height: 36px;
+
+}
+
+.br {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+.contenido {
+    
+    background-color: rgb(133, 212, 183);
+} 
+.galeria{
+    display: flex;
+}
+
+.galeria img{
+    width: 300px;
+    height: auto;
+}
+.oso{
+    margin-left: 230px;
+}
+.maya{
+    margin-left: 230px;
+}
+.wifi{
+    margin-left: 230px;
+}
+
+
+
+
+.formulario{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(133, 212, 183);
+}
+.formulario .CuadroForm{
+    background-color: beige;
+    width: 63%;
+    height: 750px;
+    margin-left: 240px;
+    
+}
+.tituloForm {
+    text-align: center;
+}
+.CamposFormulario{
+    margin-left: 120px;
+    padding-top: 60px;;
+
+}
+
+.letraFormulario {
+    font-size: 22px;
+    text-align: left;
+    color: teal;
+    
+    
+}
+
+.AlinearCampos {
+    width: 250px;
+    height: 30px;
+}
+
+.GuardarForm{
+    width: 240px;
+    height: 80px;
+    margin-top: 60px;
+    font-size: 20px;
+    background-color: mediumturquoise;
+}
+.tabla{
+    margin-right: 20px;
+}
+
+.formupostulante{
+    width: 100%;
+    background-color:rgb(133, 212, 183);
+}
+
+.dentroformupostulante{
+    padding-left: 25%!important;
+}
+
+.listarr{
+    width: 100%;
+    background-color:rgb(133, 212, 183);
+}
+.dentrolistarr{
+    padding-left: 15%!important;
+}
+
+.tituloModificar{
+    padding-left: 10%!important;
+}
+.tituloAgregar{
+    padding-left: 10%!important;
+}
+
+@media (max-width:1024px){
+    .logo{
+        width: 90%;
+    }
+    
+    .landing_image {
+        width: 100%;
+        height: auto;
+    }
+    .Centro{
+        display: none;
+    }
+    .contacto {
+        display: none;
+    }
+    .Social {
+        float: none;
+        text-align: center;
+        
+    }
+    header {
+        height: 350px;
+        background-color: rgb(133, 212, 183);
+} 
+    
+    .navegacion {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin: auto;
+        
+
+    }
+    .navegacion li {
+        width: 100%;
+        margin-left: 0;
+        background-color: rgb(109, 204, 170);
+        height: 53px;
+        padding-top: 16px;
+        margin-top: 2px;
+    }
+ 
+   
+    .landing {
+        height: auto;
+    }
+
+    .diseñodv1 {
+        width: 100%;
+        margin-left: 0;
+        height: 674px;
+    }
+    .diseñodv2 {
+        width: 100%;
+        margin-left: 0;
+        height: 430px;
+    }
+    .imagen1{
+        width: 200px;
+        margin-left: 138px;
+
+    }
+    .imagen2{
+        width: 200px;
+        margin-left: 35px;
+        margin-top: -150px;
+    }
+    .Rescate{
+        margin-right: 35px
+    }
+    .Etapauno{
+        margin-right: 35px;
+    }
+    .margen{
+        margin-right: 35px;
+    }
+    .texto{
+        margin-right: 35px;
+    }
+    .comida{
+        margin-left: 35px;
+    }
+    .financiamiento{
+        margin-left: 35px;
+    }
+    .margen2{
+        margin-left: 35px;
+    }
+    .texto2{
+        margin-left: 35px;
+    }
+    .BotonCampañas {
+        margin-left: 30px;
+    }
+    .Campañas{
+        margin-left: 35px;
+    }
+    .color_letras{
+        margin-top: 0px;
+    }
+    .contenido{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .galeria img{
+        width: 120px;
+        margin-left: 0;
+    }
+    .oso{
+        margin-left: 1px;
+    }
+    .maya{
+        margin-left: 1px; 
+    }
+    .wifi{
+        margin-left: 1px;
+    }
+
+    .bx-wrapper .bx-caption {
+     background: none!important;
+     width: 40.5%!important;
+     margin-left: 20px;
+     margin-bottom: 70px;
+     font-size: 19px;
+    }
+    
+    .formulario{
+        width: 100%;
+        margin-left: 0;
+        height: 892px;
+    }
+    .formulario .CuadroForm{
+        width: 84%;
+        margin-left: 35px;
+        height: 892px;
+    }
+    .tituloForm{
+        margin-left: -8px;
+    }
+    .CamposFormulario{
+        margin-left: 15px;
+    }
+    .letraFormulario{
+        font-size: 12px;
+    }
+    .AlinearCampos{
+        margin-left: -115px;
+        width: 120px;
+    }
+    .GuardarForm{
+        margin-left: 20px;
+    }
+
+} 
