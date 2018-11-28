@@ -1,6 +1,11 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
     '/',
+    '/servicios',
+    '/formulario',   // problema al cargar offline , carga solamente home (El profe nos dijo que lo dejaramos asi)
+    '/agregar_mascota',
+    '/listar_mascotas',
+    '/accounts/login',
     '/static/core/css/estilos.css',
     '/static/core/Img/adoptados/Apolo.jpg',
     '/static/core/Img/adoptados/Duque.jpg',
